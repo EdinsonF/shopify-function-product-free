@@ -35,7 +35,6 @@ export function run(input) {
         cartLine
       );
 
-      console.log('line item for1', cartLine.quantity);
 
       if (updateOperation) {
         return [...acc, { update: updateOperation }];
@@ -62,7 +61,6 @@ function optionallyBuildUpdateOperation(
       productFree && quantity === 1 && merchandise.isFreeValidated?.value
     ) {
 
-      console.log('que es esto otro--->', merchandise.title);
       return {
         cartLineId,
         price: {

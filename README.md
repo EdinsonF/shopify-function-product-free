@@ -76,3 +76,15 @@ Open the URL generated in your console. Once you grant permission to the app, yo
 - [App authentication](https://shopify.dev/docs/apps/auth)
 - [Shopify CLI](https://shopify.dev/docs/apps/tools/cli)
 - [Shopify API Library documentation](https://github.com/Shopify/shopify-api-js#readme)
+
+
+
+## Important Considerations for Development
+## When implementing this app, please keep in mind the following:
+
+Use of Metafields:
+
+- For security purposes, a metafield should be added to the product variant that you intend to offer as a gift.
+  The metafield must be named free.is_free.
+
+- When adding the product to the cart, ensure that the following property { _required_validation: 'validated'}
